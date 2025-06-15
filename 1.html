@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Selector Types Demo</title>
+  <style>
+    /* i. Simple Selectors */
+    /* Element selector */
+    p {
+      color: darkgreen;
+      font-size: 16px;
+    }
+
+    /* ID selector */
+    #unique {
+      background-color: lightyellow;
+      padding: 5px;
+    }
+
+    /* Class selector */
+    .highlight {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    /* Group selector */
+    h1, h2, h3 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: navy;
+    }
+
+    /* Universal selector */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* ii. Combinator selectors */
+    /* Descendant selector (select <span> inside <div>) */
+    div span {
+      color: darkorange;
+    }
+
+    /* Child selector (select only direct <li> children of <ul>) */
+    ul > li {
+      list-style-type: square;
+    }
+
+    /* Adjacent sibling selector (select <p> immediately after <h2>) */
+    h2 + p {
+      background-color: #f0f8ff;
+      padding: 5px;
+    }
+
+    /* General sibling selector (select all <p> siblings after <h3>) */
+    h3 ~ p {
+      font-style: italic;
+      color: gray;
+    }
+
+    /* iii. Pseudo-class selector */
+    /* Change color when hovering over buttons */
+    button:hover {
+      background-color: lightblue;
+      cursor: pointer;
+    }
+
+    /* iv. Pseudo-element selector */
+    /* Add a decorative quote before blockquote */
+    blockquote::before {
+      content: "❝ ";
+      font-size: 2em;
+      color: teal;
+    }
+
+    /* v. Attribute selector */
+    /* Style all inputs with type="text" */
+    input[type="text"] {
+      border: 2px solid green;
+      padding: 5px;
+      width: 200px;
+    }
+
+    /* Style all links with title attribute */
+    a[title] {
+      text-decoration: underline;
+      color: purple;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Simple Selectors</h1>
+  <p>This paragraph is styled with an element selector (p).</p>
+  <p  id="unique">This paragraph has an ID selector (#unique).</p>
+  <p class="highlight">This paragraph uses a class selector (.highlight).</p>
+  <p class="highlight">This paragraph uses a class selector (.highlight).</p>
+  <h2>Group Selector Example</h2>
+  <h3>Another heading styled with group selector</h3>
+  <h1>Universal Selector applies to everything (box-sizing here)</h1>
+  <h1>Combinator Selectors</h1>
+  <div>
+    This is a div with a <span>span inside (descendant selector)</span>.
+  </div>
+  <ul>
+    <li>First item (child selector)</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+  <h2>Heading 2</h2>
+  <p>This paragraph immediately follows the h2 (adjacent sibling selector).</p>
+  <h3>Heading 3</h3>
+  <p>This paragraph is a general sibling of h3 (general sibling selector).</p>
+  <p>Another general sibling paragraph after h3.</p>
+  <h1>Pseudo-class Selector</h1>
+  <button>Hover over me</button>
+  <h1>Pseudo-element Selector</h1>
+  <blockquote>This blockquote has a decorative quote before it.</blockquote>
+  <h1>Attribute Selector</h1>
+  <input type="text" placeholder="Text input styled by attribute selector" />
+  <br><br>
+  <a href="https://example.com" title="Example site">This link has a title attribute</a><br>
+  <a href="https://google.com">This link does not have a title attribute</a>
+</body>
+</html>
