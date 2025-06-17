@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pallavi Vallam - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    .profile-img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .info {
+      margin-top: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/1000036651.jpg" alt="Pallavi Vallam" class="profile-img">
+
+  <div class="info">
+    <h1>Pallavi Vallam</h1>
+    <p>Email: pallavivallam123@gmail.com</p>
+    <p>I am a B.Tech student passionate about web development. This is my personal portfolio to showcase my projects, skills, and contact information.</p>
+  </div>
+
+</body>
+</html>
